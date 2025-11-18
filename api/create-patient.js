@@ -18,7 +18,17 @@ async function handler(req, res) {
   // Validate
   if (!firstName || !lastName || !email || !phoneNumber) {
     return res.status(400).json({ 
-      error: 'Missing required fields'
+      error: 'Missing required fields',
+      required: ['firstName', 'lastName', 'email', 'phoneNumber'],
+      received: { firstName, lastName, email, phoneNumber }
+    });
+  }
+
+  // Check workspace ID
+  if (!config.prospyr.workspaceId) {
+    return res.status(500).json({
+      error: 'Server configuration error',
+      details: 'PROSPYR_WORKSPACE_ID environment variable not set'
     });
   }
 
@@ -33,13 +43,24 @@ async function handler(req, res) {
     howDidYouFindUs
   };
 
+  console.log('Creating patient with input:', JSON.stringify(patientInput, null, 2));
+
   try {
     // Create patient
     const patientResponse = await callProspyrAPI(queries.CREATE_PATIENT, { 
       input: patientInput 
     });
 
-    const patientId = patientResponse.data.createExternalPatient.patientId;
+    console.log('Patient response:', JSON.stringify(patientResponse, null, 2));
+
+    const patientId = patientResponse.data?.createExternalPatient?.patientId;
+
+    if (!patientId) {
+      return res.status(500).json({
+        error: 'No patientId returned',
+        response: patientResponse
+      });
+    }
 
     // Add health note
     if (healthNote && patientId) {
@@ -51,6 +72,7 @@ async function handler(req, res) {
         });
       } catch (noteError) {
         console.error('Error adding note:', noteError);
+        // Don't fail if note fails
       }
     }
 
@@ -61,9 +83,11 @@ async function handler(req, res) {
     });
 
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error creating patient:', error);
     return res.status(500).json({ 
-      error: 'Failed to create patient'
+      error: 'Failed to create patient',
+      details: error.message,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
