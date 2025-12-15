@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "api.nationalweightlossclinic.org" }],
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "api.nationalclinics.com" }],
+      "destination": "/api/:path*"
+    }
+  ]
+}
