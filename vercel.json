@@ -1,14 +1,14 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/:path*",
+      "src": "/(.*)",
       "has": [{ "type": "host", "value": "api.nationalweightlossclinic.org" }],
-      "destination": "/api/:path*"
+      "dest": "/api/$1"
     },
     {
-      "source": "/:path*",
+      "src": "/(.*)",
       "has": [{ "type": "host", "value": "api.nationalclinics.com" }],
-      "destination": "/api/:path*"
+      "dest": "/api/$1"
     }
   ]
 }
