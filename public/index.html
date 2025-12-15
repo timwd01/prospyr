@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Weight Loss Clinics | Medical Weight Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #0f766e, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom Scrollbar for Modals */
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .modal-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 8px;
+        }
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="text-slate-700 bg-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                        <div class="bg-teal-600 text-white p-2 rounded-lg">
+                            <i class="fa-solid fa-leaf text-xl"></i>
+                        </div>
+                        <span class="font-bold text-2xl tracking-tight text-slate-900">National<span class="text-teal-600">Weight Loss</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <button onclick="openModal('modal-services-full')" class="text-slate-600 hover:text-teal-600 font-medium transition">Our Program</button>
+                    <a href="#how-it-works" class="text-slate-600 hover:text-teal-600 font-medium transition">How It Works</a>
+                    <!-- Highlighting Weight Loss in Nav -->
+                    <a href="https://quiz.nationalclinics.com/weight-loss/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold transition">
+                        Am I Eligible?
+                    </a>
+                    <a href="#book" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Start Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-slate-900 p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <button onclick="openModal('modal-services-full')" class="block w-full text-left px-3 py-3 text-base font-medium text-slate-600 hover:text-teal-600 hover:bg-slate-50 rounded-md">Our Program</button>
+                <a href="#how-it-works" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-teal-600 hover:bg-slate-50 rounded-md">How It Works</a>
+                <a href="https://quiz.nationalclinics.com/weight-loss/" target="_blank" class="block px-3 py-3 text-base font-bold text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-md">Am I Eligible?</a>
+                <a href="#book" class="block w-full text-center mt-4 bg-teal-600 text-white px-5 py-3 rounded-lg font-semibold">Start Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-pattern pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-sm font-semibold mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                        </span>
+                        New Patients Welcome
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
+                        Science-Backed <br>
+                        <span class="gradient-text">Metabolic Health.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Stop dieting and start treating the biology of weight. Our doctor-led programs utilize clinical strategies and metabolic coaching to help you reach your goals.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <!-- Emphasis on Weight Loss CTA -->
+                        <a href="https://quiz.nationalclinics.com/weight-loss/" target="_blank" class="inline-flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-semibold text-lg transition shadow-lg hover:shadow-blue-500/25">
+                            Check Eligibility
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#how-it-works" class="inline-flex justify-center items-center bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-3.5 rounded-lg font-semibold text-lg transition shadow-sm">
+                            How It Works
+                        </a>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-500">
+                        <i class="fa-solid fa-shield-halved text-teal-600 mr-1"></i>
+                        100% Online & Confidential
+                    </p>
+                </div>
+                <div class="hidden lg:block lg:col-span-6 relative">
+                    <!-- Abstract Shape Background -->
+                    <div class="absolute -top-12 -right-12 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-12 -left-12 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                    
+                    <div class="relative bg-white p-2 rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Person living healthy lifestyle" class="rounded-xl w-full object-cover h-[500px]">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-slate-100 flex items-center gap-4">
+                            <div class="bg-teal-100 p-3 rounded-full text-teal-600">
+                                <i class="fa-solid fa-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500 font-medium">Program Success</p>
+                                <p class="text-xl font-bold text-slate-900">15% Avg. Weight Loss*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Impact Stats -->
+    <div class="bg-white border-y border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <h3 class="text-3xl font-bold text-slate-900">15k+</h3>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Patients Treated</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-3xl font-bold text-slate-900">50</h3>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">States Covered</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-3xl font-bold text-slate-900">100%</h3>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Secure Platform</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-3xl font-bold text-slate-900">24/7</h3>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Medical Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-teal-600 font-semibold tracking-wide uppercase text-sm mb-2">Our Program</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">A Comprehensive Approach to Weight Care</h3>
+                <p class="text-slate-600 text-lg">We combine modern science with lifestyle coaching to deliver sustainable results. No crash diets, just evidence-based care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: Biological Support -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Biological Support</h4>
+                    <p class="text-slate-600 mb-6">Access clinical options that work with your biology to support your health goals, determined by your provider.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Target Root Causes</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Metabolic Optimization</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Clinician Guided</li>
+                    </ul>
+                    <button onclick="openModal('modal-glp1')" class="text-teal-600 font-semibold hover:text-teal-700 flex items-center text-sm">Learn More <i class="fa-solid fa-chevron-right text-xs ml-1"></i></button>
+                </div>
+
+                <!-- Service 2 (Core Program) -->
+                <div class="bg-blue-50/50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border-2 border-blue-100 order-first md:order-none relative">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Medical Supervision</h4>
+                    <p class="text-slate-600 mb-6">Your personal board-certified clinician will tailor a plan specifically for your metabolic profile and needs.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Regular Check-ins</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Plan Adjustments</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Lab Work Analysis</li>
+                    </ul>
+                    <!-- Direct Link to Quiz -->
+                    <a href="https://quiz.nationalclinics.com/weight-loss/" target="_blank" class="w-full block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition">
+                        Am I Eligible?
+                    </a>
+                </div>
+
+                <!-- Service 3: Coaching -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Metabolic Coaching</h4>
+                    <p class="text-slate-600 mb-6">We provide the tools you need for sustainable success. Our coaches help you build habits that last.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Nutrition Guides</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Sleep & Stress Support</li>
+                        <li class="flex items-center text-sm text-slate-600"><i class="fa-solid fa-check text-teal-500 mr-2"></i> Ongoing Motivation</li>
+                    </ul>
+                    <button onclick="openModal('modal-coaching')" class="text-purple-600 font-semibold hover:text-purple-700 flex items-center text-sm">Learn More <i class="fa-solid fa-chevron-right text-xs ml-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-800/50 transform skew-x-12 translate-x-20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">The Biological Approach to Weight Care</h2>
+                    <p class="text-slate-300 text-lg mb-8">
+                        Our program treats weight management as a medical condition. We focus on your unique biological needs to create a sustainable path forward.
+                    </p>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Take the Quiz</h4>
+                                <p class="text-slate-400 text-sm">Answer a few questions about your health history to see if you qualify for the program.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Clinician Consultation</h4>
+                                <p class="text-slate-400 text-sm">Connect with a licensed provider to review your history and receive a tailored care plan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Direct Delivery</h4>
+                                <p class="text-slate-400 text-sm">Your program components are shipped directly to your door for convenience and privacy.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-teal-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Ongoing Support</h4>
+                                <p class="text-slate-400 text-sm">Regular check-ins to monitor progress and ensure you are meeting your goals safely.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://quiz.nationalclinics.com/weight-loss/" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold transition">
+                        See If You Qualify
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Clinician reviewing patient data" class="rounded-2xl shadow-2xl border-4 border-slate-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Success / Why Us (Replaced Generic Telehealth) -->
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Real Results, Real Science</h2>
+                <p class="text-slate-600 text-lg">
+                    We don't rely on willpower. We rely on biology. Our members achieve sustainable weight loss by addressing the root causes.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-teal-600 text-2xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Sustainable Loss</h4>
+                    <p class="text-sm text-slate-500">Our average member loses 15% of their body weight and keeps it off.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-teal-600 text-2xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Better Health</h4>
+                    <p class="text-sm text-slate-500">Beyond the scale, our members see improvements in blood pressure, energy, and mobility.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-teal-600 text-2xl">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Constant Support</h4>
+                    <p class="text-sm text-slate-500">You are never alone. Chat with your clinical team anytime through our secure portal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section (Conversion Focus) -->
+    <section id="book" class="py-24 bg-teal-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="p-2 bg-teal-600 text-center">
+                    <p class="text-teal-100 text-sm font-medium">Secure & Confidential Inquiry</p>
+                </div>
+                <div class="p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-center text-slate-900 mb-2">Get Started Today</h2>
+                    <p class="text-center text-slate-500 mb-10">Have questions about the program? Fill out the form below or take the eligibility quiz.</p>
+
+                    <form onsubmit="event.preventDefault(); alert('In a real deployment, this would securely transmit data.');" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition" placeholder="Jane">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition" placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Topic of Interest</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+                                    <option>Program Eligibility</option>
+                                    <option>Plan Questions</option>
+                                    <option>Pricing & Payment Plans</option>
+                                    <option>Technical Support</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Message (Optional)</label>
+                            <textarea class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition" rows="3" placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1" id="consent" required>
+                            <label for="consent" class="text-xs text-slate-500">
+                                I consent to National Weight Loss Clinics processing my data. I understand this form is for non-emergency inquiries only.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-lg shadow-lg transition transform hover:-translate-y-0.5">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="font-bold text-xl text-white mb-4 block">National<span class="text-teal-500">Weight Loss</span></span>
+                    <p class="mb-4">Accessible, doctor-led metabolic health programs designed for long-term results.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-3">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><button onclick="openModal('modal-about')" class="hover:text-teal-400">About Us</button></li>
+                        <li><button onclick="openModal('modal-services-full')" class="hover:text-teal-400">Our Program</button></li>
+                        <li><button onclick="openModal('modal-careers')" class="hover:text-teal-400">Careers</button></li>
+                        <li><button onclick="openModal('modal-news')" class="hover:text-teal-400">Newsroom</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-3">Resources</h5>
+                    <ul class="space-y-2">
+                        <li><a href="https://quiz.nationalclinics.com/weight-loss/" class="hover:text-teal-400">Check Eligibility</a></li>
+                        <li><button onclick="openModal('modal-bill')" class="hover:text-teal-400">Pay Bill Online</button></li>
+                        <li><button onclick="openModal('modal-privacy')" class="hover:text-teal-400">Privacy Policy</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-3">Legal</h5>
+                    <ul class="space-y-2">
+                        <li><button onclick="openModal('modal-terms')" class="hover:text-teal-400">Terms of Service</button></li>
+                        <li><button onclick="openModal('modal-accessibility')" class="hover:text-teal-400">Accessibility Statement</button></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 mt-8 text-xs text-slate-500">
+                <p class="mb-2">
+                    <strong>Medical Disclaimer:</strong> The content on this website is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Results may vary.
+                </p>
+                <p>
+                    *Average weight loss based on clinical trials of medical weight management programs when combined with lifestyle changes.
+                </p>
+                <p class="mt-2">
+                    &copy; 2024 National Weight Loss Clinics. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- 2. About Us -->
+    <div id="modal-about" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-about')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white z-10">
+                <h3 class="text-xl font-bold text-slate-900">About National Weight Loss Clinics</h3>
+                <button onclick="closeModal('modal-about')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 space-y-6">
+                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="w-full h-48 object-cover rounded-xl mb-4" alt="Our team">
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Our Mission</h4>
+                    <p class="text-slate-600">To democratize access to the latest metabolic healthcare. We believe that everyone deserves to feel their best, and biology shouldn't be a barrier.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Our Approach</h4>
+                    <p class="text-slate-600">We combine board-certified clinicians with cutting-edge digital health tools to deliver a weight loss program that fits into your life, not the other way around.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Careers -->
+    <div id="modal-careers" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-careers')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white z-10">
+                <h3 class="text-xl font-bold text-slate-900">Join Our Team</h3>
+                <button onclick="closeModal('modal-careers')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600 mb-6">We are always looking for passionate healthcare professionals to join our growing network.</p>
+                <div class="space-y-4">
+                    <!-- Job 1 -->
+                    <div class="border border-slate-200 rounded-lg p-4 hover:border-teal-500 transition cursor-pointer">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h5 class="font-bold text-slate-900">Obesity Medicine Specialist</h5>
+                                <p class="text-sm text-slate-500">Remote • Full-time</p>
+                            </div>
+                            <span class="bg-teal-100 text-teal-700 text-xs px-2 py-1 rounded">Open</span>
+                        </div>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="border border-slate-200 rounded-lg p-4 hover:border-teal-500 transition cursor-pointer">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h5 class="font-bold text-slate-900">Nurse Practitioner</h5>
+                                <p class="text-sm text-slate-500">Remote • Full-time</p>
+                            </div>
+                            <span class="bg-teal-100 text-teal-700 text-xs px-2 py-1 rounded">Open</span>
+                        </div>
+                    </div>
+                     <!-- Job 3 -->
+                     <div class="border border-slate-200 rounded-lg p-4 hover:border-teal-500 transition cursor-pointer">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h5 class="font-bold text-slate-900">Patient Success Coordinator</h5>
+                                <p class="text-sm text-slate-500">Remote • Part-time</p>
+                            </div>
+                            <span class="bg-teal-100 text-teal-700 text-xs px-2 py-1 rounded">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 text-center">
+                    <button class="text-teal-600 font-semibold hover:underline">View All Openings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Service Details: Biological Support -->
+    <div id="modal-glp1" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-glp1')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white z-10">
+                <h3 class="text-xl font-bold text-teal-700">Biological Support</h3>
+                <button onclick="closeModal('modal-glp1')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600 mb-4">Our program utilizes FDA-approved clinical methods that address the biological drivers of weight, such as appetite regulation and metabolic function.</p>
+                <h4 class="font-bold text-slate-900 mt-6 mb-2">Program Features</h4>
+                <ul class="grid grid-cols-1 gap-2 text-slate-600 mb-6">
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Comprehensive Medical Review</li>
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Personalized Clinical Strategy</li>
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Ongoing Provider Supervision</li>
+                </ul>
+                <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-teal-500">
+                    <p class="text-sm text-slate-600"><strong>Note:</strong> All treatment plans are determined by a licensed medical provider based on your unique health profile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Service Details: Metabolic Coaching -->
+     <div id="modal-coaching" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-coaching')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white z-10">
+                <h3 class="text-xl font-bold text-purple-700">Metabolic Coaching</h3>
+                <button onclick="closeModal('modal-coaching')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600 mb-4">Sustainable weight health requires a holistic approach. Our coaching program pairs you with experts who help you optimize your lifestyle.</p>
+                <h4 class="font-bold text-slate-900 mt-6 mb-2">Key Focus Areas</h4>
+                <ul class="space-y-3 text-slate-600 mb-6">
+                    <li class="flex items-start"><span class="bg-purple-100 text-purple-600 rounded-full p-1 mr-3 mt-1"><i class="fa-solid fa-check text-xs"></i></span> <span><strong>Nutrition:</strong> Focus on nutrient density and satiety, not just calorie counting.</span></li>
+                    <li class="flex items-start"><span class="bg-purple-100 text-purple-600 rounded-full p-1 mr-3 mt-1"><i class="fa-solid fa-check text-xs"></i></span> <span><strong>Sleep & Stress:</strong> Understanding how rest and cortisol impact your metabolism.</span></li>
+                    <li class="flex items-start"><span class="bg-purple-100 text-purple-600 rounded-full p-1 mr-3 mt-1"><i class="fa-solid fa-check text-xs"></i></span> <span><strong>Movement:</strong> Realistic activity plans that fit your schedule.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Pay Bill -->
+    <div id="modal-bill" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-bill')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-[fadeIn_0.2s_ease-out] modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100">
+                <h3 class="text-xl font-bold text-slate-900">Quick Pay</h3>
+                <button onclick="closeModal('modal-bill')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-6">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Invoice / Account Number</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 outline-none" placeholder="e.g. INV-12345">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Billing Zip Code</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 outline-none">
+                    </div>
+                    <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2 rounded-lg">Find My Bill</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Legal Text (Privacy, Terms, etc - Generic Placeholder) -->
+    <div id="modal-privacy" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-privacy')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white">
+                <h3 class="text-xl font-bold text-slate-900">Privacy Policy</h3>
+                <button onclick="closeModal('modal-privacy')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 text-sm text-slate-600 space-y-4">
+                <p><strong>Last Updated: January 1, 2024</strong></p>
+                <p>National Weight Loss Clinics ("we," "us," or "our") respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.</p>
+                <p><strong>1. Data We Collect:</strong> We may collect Identity Data (name, username), Contact Data (email, phone), and Technical Data (IP address, browser type).</p>
+                <p><strong>2. Data Security:</strong> Any medical information collected through our secure portals is protected using industry-standard encryption and security protocols. We implement strict measures to ensure confidentiality.</p>
+                <p><strong>3. Use of Data:</strong> We use your data to manage our relationship with you, improve our website, and comply with legal obligations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-terms" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-terms')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white">
+                <h3 class="text-xl font-bold text-slate-900">Terms of Service</h3>
+                <button onclick="closeModal('modal-terms')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 text-sm text-slate-600 space-y-4">
+                <p><strong>1. Agreement:</strong> By accessing this website, you agree to be bound by these Terms of Service and all applicable laws.</p>
+                <p><strong>2. Medical Advice Disclaimer:</strong> The content on this site is for informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+                <p><strong>3. User Accounts:</strong> You are responsible for maintaining the confidentiality of your account credentials.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-news" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-news')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white">
+                <h3 class="text-xl font-bold text-slate-900">Newsroom</h3>
+                <button onclick="closeModal('modal-news')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8">
+                <div class="space-y-6">
+                    <article>
+                        <span class="text-teal-600 text-xs font-bold uppercase">Press Release</span>
+                        <h4 class="font-bold text-lg mt-1">National Weight Loss Clinics Expands Services</h4>
+                        <p class="text-slate-500 text-sm mt-2">We are thrilled to bring our evidence-based metabolic health program to 5 new states...</p>
+                    </article>
+                    <hr class="border-slate-100">
+                    <article>
+                        <span class="text-teal-600 text-xs font-bold uppercase">Research</span>
+                        <h4 class="font-bold text-lg mt-1">The Biology of Weight: New Findings</h4>
+                        <p class="text-slate-500 text-sm mt-2">Understanding how metabolic factors influence long-term health outcomes...</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-accessibility" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-accessibility')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white">
+                <h3 class="text-xl font-bold text-slate-900">Accessibility Statement</h3>
+                <button onclick="closeModal('modal-accessibility')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 text-sm text-slate-600">
+                <p>National Weight Loss Clinics is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards (WCAG 2.1).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. All Services Modal -->
+    <div id="modal-services-full" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm hidden" onclick="if(event.target === this) closeModal('modal-services-full')">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto modal-content">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 sticky top-0 bg-white z-10">
+                <h3 class="text-xl font-bold text-slate-900">Program Curriculum</h3>
+                <button onclick="closeModal('modal-services-full')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-8 grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-teal-700 mb-3 border-b pb-1">Phase 1: Assessment</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Comprehensive Health History</li>
+                        <li>Metabolic Profile Review</li>
+                        <li>Goal Setting Session</li>
+                        <li>Eligibility Determination</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-700 mb-3 border-b pb-1">Phase 2: Initiation</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Personalized Care Plan Creation</li>
+                        <li>Biological Support Options</li>
+                        <li>Nutrition & Lifestyle Onboarding</li>
+                        <li>Initial Clinician Consultation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-700 mb-3 border-b pb-1">Phase 3: Optimization</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Regular Progress Monitoring</li>
+                        <li>Care Plan Adjustments</li>
+                        <li>Advanced Lifestyle Coaching</li>
+                        <li>Sleep & Stress Management</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-700 mb-3 border-b pb-1">Phase 4: Maintenance</h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>Long-term Weight Stability</li>
+                        <li>Continued Metabolic Support</li>
+                        <li>Relapse Prevention Strategies</li>
+                        <li>Ongoing Community Access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling background
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+        // Close modal on Escape key press
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                const openModals = document.querySelectorAll('.fixed:not(.hidden)');
+                openModals.forEach(modal => {
+                    modal.classList.add('hidden');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+</body>
+</html>
